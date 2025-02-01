@@ -206,7 +206,7 @@ header{
 /* Image inside project */
 .project-container img {
     width: 100%; /* Fit image to the container */
-    height: 190px;
+    height: 180px;
 }
 
 
