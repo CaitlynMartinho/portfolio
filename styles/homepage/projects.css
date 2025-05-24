@@ -1,0 +1,158 @@
+.projects{
+    position: relative;
+    height: 180vh;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.project-container{
+    width: 35%;
+    max-height: 550px;
+    max-width: 500px;
+    padding: 40px;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.20);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+}
+
+.project-container img{
+    width: 100%;
+    margin: 0 0 10px 0;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.10);
+    
+}
+
+.project-container p{
+    margin: 0 0 15px 0;
+}
+
+.project-container a{
+    color: var(--pink);
+}
+
+.project-container:hover{
+    transform: scale(1.1);
+}
+
+.titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.titles h2{
+    font-family: "Fredoka", serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.titles h3{font-size: 13px;}
+
+.card-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(5deg);
+    background-color: #D5FCDE;
+}
+
+.card-1 .titles h3{
+    color: #5FC872;
+}
+
+.card-1 img{
+    border: 2px solid #5FC872;
+}
+
+.card-2{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    transform: rotate(-5deg);
+    background-color: #E2EBFA;
+}
+
+.card-2 .titles h3{
+    color: #5FAAC8;
+}
+
+.card-2 img{
+    border: 2px solid #5FAAC8;
+}
+
+.card-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-7deg);
+    background-color: #FFF5DF;
+}
+
+.card-3 .titles h3{
+    color: #E0B95F;
+}
+
+.card-3 img{
+    border: 2px solid #E0B95F;
+}
+
+.projects .sub-text{
+    position: absolute;
+    right: 10%;
+    top: 100px;
+    font-family: "Caveat", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--subText);
+    width: 25%;
+}
+
+.project-arrow1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 450px;
+}
+
+.project-arrow2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 450px;
+}
+
+@media only screen and (max-width: 768px){
+    .projects{
+        height: auto;
+        width: 96vw;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .project-container{
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .card-1{
+        position:unset;
+    }
+
+    .card-2{
+        position: unset;
+    }
+
+    .card-3{
+        position: unset;
+    }
+
+
+
+}

@@ -1,0 +1,92 @@
+.introduction h1{
+    color: var(--green);
+    font-size: 60px;
+    font-family: "Fredoka";
+    font-weight: 500;
+    margin: 0;
+}
+
+.introduction .heading{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.introduction p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.introduction{
+    display: flex;
+    height: max-content;
+}
+
+.introduction .left{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction .right{
+    width: 50vw;
+    text-align: right;
+
+}
+
+.problem-and-solution{
+    width: 50%;
+    margin: 100px 0;
+    font-size: 20px;
+}
+
+.problem-and-solution .heading{
+    text-align: left;
+}
+
+.problem-and-solution p{
+    margin: 35px 0;
+}
+
+
+.transformation img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.transformation img:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.transformation{
+    width: 60%;
+}
+
+.transformation h2{
+    text-align: left;
+}
+
+@media only screen and (max-width:768px){
+    .introduction{
+        flex-direction: column;
+        gap: 50px;
+        margin: 10px;
+    }
+
+    .introduction .left{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .introduction .right, .introduction .right img, .problem-and-solution, .transformation{
+        width: 100%;
+    }
+
+    .introduction h1{
+        font-size: 40px;
+    }
+}

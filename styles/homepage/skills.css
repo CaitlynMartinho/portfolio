@@ -1,0 +1,85 @@
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.skills-container{
+    background-color: var(--white);
+    width: 180px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.skills-container h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.languages-heading{background-color: var(--blue);}
+
+.software-heading{background-color: var(--purple);}
+
+.skills-container ul{
+    list-style-type: none;
+    line-height: 35px;
+}
+
+.skills-container img{
+    margin-right: 7px;
+    width: "18px";
+    height: "18px";
+}
+
+.skills-top-arrow{
+    position: absolute;
+    top: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    right: 0;
+}
+
+.skills-top-arrow img{
+    height: 60px;
+    margin-right: 15px;
+}
+
+.skills-top-arrow p, .skills-bottom-arrow{
+    font-family: "Caveat", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--subText);
+}
+
+.skills-bottom-arrow{
+    margin: 80px auto 10px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:768px){
+    .skills{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .skills-top-arrow{
+        display: none;
+    }
+    
+}

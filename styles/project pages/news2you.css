@@ -1,0 +1,63 @@
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction h1{
+    color: var(--orange);
+    font-family: "Fredoka";
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.introduction h2{
+    color: #000;
+    font-family: "Fredoka";
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.introduction p{
+    font-size: 20px;
+}
+
+.content{
+    width: 65%;
+}
+
+.content p{
+    line-height: 170%;
+}
+
+.content h2{
+    margin-top: 80px;
+}
+
+@media only screen and (max-width:768px){
+    .introduction{
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .introduction h1{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .introduction h2{
+        font-size: 30px;
+    }
+
+    .introduction img{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+

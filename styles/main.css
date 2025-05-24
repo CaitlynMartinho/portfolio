@@ -1,634 +1,180 @@
+html{
+    background-image: url(../images/background-grid.png);
+    background-color: var(--lightGrey);
+    scroll-behavior: smooth;
+}
+
 body{
-    overflow-x: hidden;
-    font-family: Inter;
-    padding: 0;
-    background-color: #f8f8f8;
+    margin: 0 8vw;
+    font-family: "Outfit", serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: var(--charcoal);
+    
 }
 
-*{
-    margin: 0;
-}
-
-.left-container{width: 45%;}
-
-.right-container{
-    position: absolute;
-    right: 0;
-    width: 50%;
-}
+:root {
+    --charcoal: #333333;
+    --white: #ffffff;
+    --black: #000000;
+    --lightGrey: #f3f3f3;
+    --green: #36D399;
+    --pink: #FF4081;
+    --orange: #FF8C42;
+    --purple: #A259FF;
+    --blue: #40A2D8;
+    --yellow: #FFD700;
+    --subText: #B9B9B9;
+  }
 
 .heading{
-    font-family: "Exo 2";
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Fredoka", serif;
+    margin-bottom: 30px;
+}
+
+.subheading{
     font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-  
-
-header{
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-/*--------------------------------INTRODUCTION SECTION--------------------------------*/ 
-.intro-heading{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-#intro-container h1{
-    font-size: 90px;
-    font-family: "Exo 2";
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 29px;
-}
-
-#intro-container h2{
-    font-size: 48px;
     font-weight: 500;
-    margin: 0;
 }
 
-#intro-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    position: relative;
+/*NAVBAR*/
 
-}
-
-.text-container {
-    position: relative;
-    display: inline-block;
-    font-size: 48px;
-    font-weight: 500;
-    margin: 0;
-}
-  
-.word {
-    position: relative;
-    z-index: 1;
-    padding: 0 4px; /* Adds a little spacing between words */
-}
-  
-.highlight {
-    position: absolute;
-    height: 100%;
-    background-color: #8967b355;
-    border-radius: 4px;
-    z-index: 0;
-    transition: all 0.4s ease-in-out;
-    top: 0;
-    left: 0;
-    width: 0;
-}
-  
-#intro-img-bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 18vw;
-}
-
-#intro-img-top{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18vw;
-}
-
-#intro-bottom{
-    background-color: #E5315C;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    
-}
-
-#intro-bottom ul{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    list-style: none; 
-    gap: 200px;
-    padding: 0;
-}
-
-#intro-bottom li{
-    display: inline; 
-    text-align: center;
-    font-size: 25px;
-}
-
-#intro-bottom img{
-    height: 25px;
-    display: flex;
-    justify-self: center;
-}
-
-/*--------------------------------RECENT WORK SECTION--------------------------------*/ 
-
-#recent-work-container{
-    margin: 100vh 10% 0 10%;
-    position: relative;
-}
-
-
-/* Shadow wrapper around the project */
-.project-shadow {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-
-.project-shadow:hover {
-    transform: scale(1.05); /* Grows the element slightly */
-    z-index: 10;
-}
-
-.project-shadow:hover .project-container img {
-    transform: scale(1.02); /* Zooms the image on hover */
-}
-
-
-/* Shadow effect */
-.project-shadow::before {
-    content: "";
-    position: absolute;
-    top: 5px; /* Shadow offset */
-    left: 5px;
-    width: 100%;
-    height: 100%;
-    background-color: #8967b387; /* Shadow color */
-    clip-path: polygon(50% 7%, 55% 0, 100% 0, 100% 94%, 94% 100%, 0 100%, 0 7%);
-    z-index: -1; /* Place behind the project-border */
-}
-
-/* Project border styling */
-.project-border {
-    background-color: #8967B3;
-    cursor: pointer;
-    width: 20vw;
-    padding: 1px;
-    clip-path: polygon(50% 7%, 55% 0, 100% 0, 100% 94%, 94% 100%, 0 100%, 0 7%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Project container styling */
-.project-container {
-    background-color: #f8f8f8;
-    width: 100%;
-    padding: 30px 10px 10px 10px;
-    clip-path: polygon(50% 7%, 55% 0, 100% 0, 100% 94%, 94% 100%, 0 100%, 0 7%);
-    min-height: 180px;
-}
-
-
-/* Image inside project */
-.project-container img {
-    width: 100%; /* Fit image to the container */
-    height: 180px;
-}
-
-
-
-#projects{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    
-}
-
-/*--------------------------------ABOUT ME SECTION--------------------------------*/ 
-
-#about-me{
-    display: flex;
-    margin: 50px 10% 0 10%;
-}
-
-#about-me p{
-    color: #474747;
-    margin-bottom: 12px;
-    line-height: 160%;
-}
-
-#anchor-container{
-    margin-top: 20px; 
-}
-
-#resume-btn{
-    color: #E5315C;
-    text-decoration: none;
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--orange);
+    color: var(--white);
     font-weight: 600;
-    margin-right: 30px;
-}
-
-#resume-btn:hover{
-    text-decoration: underline;
-    color: #66448F;
-}
-
-#contact-btn {
-    position: relative;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #f8f8f8;
-    background-color: #E5315C; /* Button background */
-    border: 2px solid #f8f8f8; /* Border color */
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    display: inline-block;
-  }
-
-  #contact-btn:hover{background-color: #66448F;}
-  
-  #contact-btn::before,
-  #contact-btn::after {
-    content: '';
-    position: absolute;
-    width: 16px; /* Adjust width for triangles */
-    height: 16px; /* Adjust height for triangles */
-    background-color: #f8f8f8; /* Triangle color */
-  }
-  
-  #contact-btn::before {
-    top: -2px; /* Align with the border */
-    left: -2px; /* Align with the border */
-    clip-path: polygon(0 0, 100% 0, 0 100%); /* Top-left triangle */
-  }
-  
-  #contact-btn::after {
-    bottom: -2px; /* Align with the border */
-    right: -2px; /* Align with the border */
-    clip-path: polygon(100% 0 , 0 100%, 100% 100%); /* Bottom-right triangle */
-  }
-  
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 270px;
-}
-
-#about-me .right-container{
-    max-height: 270px;
-    margin: 0 10vw 0 0;
-    width: 38vw;
-}
-
-#about-me .left-container{
-    width: 38vw;
-}
-
-
-.tagcloud {
-    font-size: 20px;
-  }
-  .tagcloud--item {
-    padding: 2px 4px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-    color: #66448F;
-  }
-  .tagcloud--item:hover {
-    background-color: rgba(213, 134, 255, 0.1);
-    border: 1px solid #66448F;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    opacity: 20 !important;
-    z-index: 100 !important;
-  }
-  .light .tagcloud--item {
-    color: #fff;
-  }
-  .light .tagcloud--item:hover {
-    background-color: rgba(225, 194, 255, 0.01);
-    border: 1px solid #fff;
-  }
-
-
-/*--------------------------------RESUME SECTION--------------------------------*/ 
-
-#resume {
-    padding: 40px 0px;
-    margin: 0 10%;
-    text-align: left;
-  }
-  
-  #resume h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .resume-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    
-  }
-  
-  .resume-section {
-    flex: 1;
-  }
-  
-  .resume-section h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .resume-item {
-    height: 65px;
-    width: 35vw;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    margin-bottom: 45px;
-    border-radius: 3px;
-    background-color: #fff;
-    border: #66448F solid 2px;
-    box-shadow: #8967b36d 7px 7px;
-}
-
-.resume-item:hover {
-    box-shadow: #8967b3a3 10px 10px;
-}
-
-.resume-item span {
-    position: relative; /* Ensures text is above the triangle */
-    z-index: 1;
-    color: #d61b74; /* Text color */
-}
-
-  
-  .resume-item .year {
-    background-color: #f8f5ff;
-    padding: 5px 15px;
-    border-radius: 10px 0 0 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #d61b74;
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 15px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .resume-item .year::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-left: 10px solid #f8f5ff;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  
-  .resume-item .details {
-    flex: 1;
+    border-radius: 50%;
+    border: solid var(--white) 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13);
+}
+
+.logo {
     font-size: 20px;
-    color: #000;
-  }
-  
-  /*--------------------------------RESUME SECTION--------------------------------*/ 
-
-  #contact-container{
-    background-image: url(../images/map.png);
-    width: 100vw;
-    height: 600px;
-    position: relative;
-  }
-
-  #contact-form{
-    background-color: #f8f8f8;
-    width: 28%;
-    height: 360px;
-    border: #66448F solid 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 10vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav{
+    background-color: var(--white);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    border-radius: 5px;
-    box-shadow: #8967b36d 7px 7px;
-  }
-
-  #contact-submit-btn{
-    background-color: #E5315C;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    width: 70%;
-    height: 50px;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-
-  #contact-form h2{
+    padding: 10px 50px;
+    box-shadow: 0px 0px 12.9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    max-height: 55px;
     margin-top: 20px;
-    margin-bottom: 0;
-  }
-  #message-input, #email-input{
-    border-radius: 3px;
-    width: 70%;
-    height: 50px;
-    border: #000 solid 1px;
+    z-index: 10;
+    position: fixed;
+    width: 84%;
+    box-sizing: border-box;
+    
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
     padding: 0;
-    font-family: inter;
-    text-indent: 10px;
-  }
+}
 
-  #contact-form textarea::placeholder{
-    position: absolute;
-    transform: translateY(10px);
-  }
+nav li { display: inline;}
 
-  #message-input{
-    height: 130px;
-    resize: none;
-  }
-  
-  
-  /* Responsive adjustments */
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: var(--charcoal);
+}
 
-  @media only screen and (max-width: 600px) {
-    body {width: 100vw;}
+nav a:hover{
+    color: var(--orange);
+    
+}
 
-    .heading{
-        font-size: 20px;
-        margin-bottom: 15px;
+#nav-button{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#nav-button:hover{
+    background-color: #de6114;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.burger span {
+    background-color: var(--charcoal);
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        width: 100%;
     }
 
-    #intro-container h1{font-size: 30px;}
-
-    #intro-container span{font-size: 20px;}
-
-    .text-container {font-size: 20px;}
-
-    .word {padding: 0 0px;}
-
-    #intro-img-top, #intro-img-bottom{
-        width: 25vw;
+    nav {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px 25px;
     }
 
-    #intro-bottom{
-        width: 100vw;
-        height: 50px;
+    .burger {
+        display: flex;
     }
-    
-    #intro-bottom ul{gap: 10px;}
-    
-    #intro-bottom li{font-size: 14px;}
-    
-    #intro-bottom img{height: 15px;}
 
-    #recent-work-container{
-        margin: 100vh 10% 0 10%;
-        position: relative;
+    .right {
+        display: none;
+        width: 100%;
     }
-    
-    .project-shadow {width: 70vw;}
-    
-    .project-shadow:hover {transform: scale(1); /* Grows the element slightly */}
-    
-    .project-shadow:hover .project-container img {transform: scale(1); /* Zooms the image on hover */}
 
-    .project-border {width: 70vw;}
-    
-    .project-container {width: 100%;}
-    
-    #projects{
+    .right.active {
+        display: block;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
         align-items: center;
         gap: 20px;
-        flex-direction: column;
+        margin-top: 15px;
     }
 
-    #about-me .left-container{width: 85vw;}
-
-    #about-me .right-container{
-        position: relative;
-        right: 0;
-        width: 85vw;
+    nav li {
+        display: block;
     }
 
-    #about-me{
-        display: flex;
-        flex-direction: column;
-        margin: 50px 10% 0 10%;
-    }
-    
-    #about-me p{
-        margin-bottom: 15px;
-        font-size: 15px;
-    }
-
-    #anchor-container{
-        margin-top: 0px; 
-        display: inline-flex;
-        align-items: center;
-    }
-    
-    #resume-btn{
-        margin-right: 15px;
-        font-size: 14px;
-    }
-    
-    #contact-btn {
-        padding: 10px 10px;
-        font-size: 14px;
-      }
-
-    .tagcloud {font-size: 16px;}
-
-    .resume-container {
-        flex-direction: column;
-        gap: 0;
-        
-      }
-
-      #resume {
-        padding: 40px 0px;
-        margin: 0 10%;
-        text-align: left;
-      }
-      
-      #resume h2 {
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-      
-      
-      .resume-section {
-        flex: 1;
-      }
-      
-      .resume-section h3 {margin-bottom: 25px;}
-      
-      .resume-item {
-        width: 80vw;
-        padding: 0;
-        margin-bottom: 25px;
-      
-    }
-    
-    .resume-item:hover {
-        box-shadow: #8967b3a3 10px 10px;
-    }
-       
-    .resume-item .year {
+    #nav-button {
         font-size: 16px;
-        margin-right: 15px;
-        margin-left: 10px;
     }
 
-    .resume-item .details {font-size: 14px;}
-
-    #contact-form{
-        width: 80%;
-    }
-
-    #email-input, #contact-submit-btn{
-        height: 40px;
-        width: 80%;
-    }
-
-    #message-input{
-        height: 100px;
-        width: 80%;
-    }
 }
-
-

@@ -1,241 +1,265 @@
 <!DOCTYPE html>
-<head>
-    <!--META TAGS-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
 
-    <!--Stylesheet links-->
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/main.css">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Caitlyn Martinho</title>
+        <meta name="description" content="portfolio, ui/ux, web design, web designer, caitlyn martinho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Inter font import-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="./images/icons/favicon.png">
 
-    <!--Exo 2 font import-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!---------------------------------------------------------NAVBAR------------------------------------------------------------>
-    <nav>
-        <ul>
-            <li><a href="#home" class="nav-link"><span id="logo-pink">Caitlyn</span>Martinho</a></li>
-            <li><a href="#recent-work-container" class="nav-link">Recent work</a></li>
-            <li><a href="#about-me" class="nav-link">About</a></li>
-            <li><a href="#resume" class="nav-link">Resume</a></li>
-        </ul>
-    </nav>
-
-    <div class="mobile-nav">
-        <a href="#home" class="nav-link"><span id="logo-pink">Caitlyn</span>Martinho</a>
-        <button id="menu-toggle">☰</button>
-        <ul>
-            <li><a href="#recent-work-container" class="nav-link">Recent Work</a></li>
-            <li><a href="#about-me" class="nav-link">About</a></li>
-            <li><a href="#resume" class="nav-link">Resume</a></li>
-        </ul>
-    </div>
-
-<!----------------------------------------------------INTRO SECTION------------------------------------------------------->
-    <header id="home" class="section">
-        <div id="intro-container" >
-            <h1 class="intro-heading">HI, I'M <br>CAITLYN MARTINHO</h1>
-            <div class="text-container">
-                <span class="highlight" id="highlight"></span>
-                <span>I</span>
-                <span class="word">design,</span>
-                <span class="word">animate</span>
-                <span>and</span>
-                <span class="word">develop.</span>
-              </div>
-              
-            <img src="./images/introTrianglesTop.png" id="intro-img-top">
-            <img src="./images/introTrianglesBottom.png" id="intro-img-bottom">
-        </div>
-
-        <div id="intro-bottom">
-            <ul>
-                <li>UI/ UX Design</li>
-                <li><img src="./images/sparkle.png" alt="star"></li>
-                <li>Web Development</li>
-                <li><img src="./images/sparkle.png" alt="star"></li>
-                <li>2D Animation</li>
-            </ul>
-        </div>
-    </header>
-
-<!----------------------------------------------------RECENT WORK SECTION------------------------------------------------------->
-<div id="recent-work-container" class="section">
-    <h2 class="heading">Recent Work</h2>
-
-    <div id="projects">
-        <div class="project-shadow" data-project="project1">
-            <div class="project-border">
-                <div class="project-container">
-                    <img src="./images/project.png" alt="Project">
-                </div>
-            </div>
-        </div>
-
-        <div class="project-shadow" data-project="project2">
-            <div class="project-border">
-                <div class="project-container">
-                    <img src="./images/classicrewind.png" alt="Project">
-                </div>
-            </div>
-        </div>
-
-        <div class="project-shadow" data-project="project3">
-            <div class="project-border">
-                <div class="project-container">
-                    <img src="./images/news2you.png" alt="Project">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<!----------------------------------------------------ABOUT ME SECTION------------------------------------------------------->
-    <section id="about-me" class="section">
-        <div class="left-container">
-            <h3 class="heading">About me</h3>
-            <p>Hi! I'm a passionate developer and designer with a love for crafting engaging and interactive digital experiences. I started my coding journey at just 12 years old, and now, at 19, I've turned my passion into a purposeful pursuit Last year, I expanded my expertise with a deep dive into UI Design, sharpening my eye for detail and usability.
-            </p>
-
-            <p>Currently, I'm studying Interactive Media Design, where I'm honing my skills in creating user-centric, visually compelling designs. With over seven years of experience exploring the world of code and design, I'm eager to bring innovative ideas to life and continuously push creative boundaries.</p>
-
-            <p>Let's create something amazing together! </p>
-
-            <div id="anchor-container">
-                <a href="#" id="resume-btn">Download Resume ></a>
-                <button id="contact-btn" onclick="location.href='#contact-container'">Contact Me</button>
-            </div>
-        </div>
-
-        <div class="right-container">
-            <h3 class="heading">Skills</h3>
-            <div class="content">
-
-            </div>
-        </div>
-
-    </section>
-
-    <!----------------------------------------------------RESUME SECTION------------------------------------------------------->
-    <section id="resume" class="section">
-        <h2 class="heading">RESUME</h2>
-        <div class="resume-container">
-          <!-- Education Section -->
-          <div class="resume-section">
-            <h3>EDUCATION</h3>
-
-            <div class="resume-item">
-                <div class="year"><span>2025</span></div>
-                <div class="details">National Certificate in Interactive Media Design</div>
-            </div>
-
-            <div class="resume-item">
-              <div class="year"><span>2024</span></div>
-              <div class="details">Higher Certificate in Systems Development (UI Design)</div>
-            </div>
-
-            <div class="resume-item">
-              <div class="year"><span>2023</span></div>
-              <div class="details">Matric, Hoërskool Warmbad</div>
-            </div>
-
-          </div>
-      
-          <!-- Experience Section -->
-          <div class="resume-section">
-            <h3>EXPERIENCE</h3>
-
-            <div class="resume-item">
-              <div class="year"><span>2024</span></div>
-              <div class="details">Bitsavvy WordPress Internship</div>
-            </div>
-
-            <div class="resume-item">
-              <div class="year"><span>2021 - 2024</span></div>
-              <div class="details">Together International Helpdesk</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-
-    </section>
-
-    <!----------------------------------------------------CONTACT SECTION------------------------------------------------------->
-    <section id="contact-container">
+        <!--STYLESHEETS-->
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/homepage/hero.css">
+        <link rel="stylesheet" href="./styles/homepage/about.css">
+        <link rel="stylesheet" href="./styles/homepage/projects.css">
+        <link rel="stylesheet" href="./styles/homepage/skills.css">
+        <link rel="stylesheet" href="./styles/homepage/experience.css">
+        <link rel="stylesheet" href="./styles/footer.css">
         
-        <!--Contact form-->
-        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-            <!--Access key-->
-            <input type="hidden" name="access_key" value="d6ed82a4-ebd9-4e38-935a-33878837ccc0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
-            <h2 class="heading">GET IN TOUCH</h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
-            <input type="text" placeholder="Email" id="email-input" name="email">
-            <textarea placeholder="Message" id="message-input" name="message"></textarea>
+    </head>
+    <body>
 
-            <!-- Honeypot Spam Protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <!-- NAVBAR -->
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <span class="circle">C</span> <a href="./index.html">Caitlyn</a>
+                </div>
+            </div>
+  
+            <!-- Burger menu for mobile -->
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+  
+            <div class="right" id="nav-links">
+                <ul>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./index.html#skills">Skills</a></li>
+                    <li><a href="./index.html#experience">Experience</a></li>
+                    <li><a href="./html/contact.html" id="nav-button">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
 
-            <button id="contact-submit-btn" type="submit">Submit</button>
-       
-        </form>
-    </section>
+        <!--HERO SECTION-->
+        <section class="hero">
 
-    <!--------------------------------------------------------FOOTER----------------------------------------------------------->  
-    <footer>
-        <div class="footer-container">
-          <div class="footer-column">
-            <h3>SOCIALS</h3>
-            <ul>
-              <li>
-                <a href="https://github.com/CaitlynMartinho">
-                  <img src="./images/github.png" alt="Github Icon"> CaitlynMartinho
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/caitlyn-martinho-24b613239/">
-                  <img src="./images/linkedin (1).png" alt="LinkedIn Icon"> Caitlyn Martinho
-                </a>
-              </li>
-              <li>
-                <a href="mailto:caitlyn.martinho@outlook.com">
-                  <img src="./images/mail.png" alt="Email Icon"> caitlyn.martinho@outlook.com
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>NAVIGATE</h3>
-            <ul >
-              <li><a href="#">Home</a></li>
-              <li><a href="#recent-work-container">Recent work</a></li>
-              <li><a href="#about-me">About</a></li>
-              <li><a href="#resume">Resume</a></li>
-            </ul>
-          </div>
+            <div class="text-container">
+                <p class="hero-subtext">Introduction</p>
+                <h1>HI I'M CAITLYN MARTINHO</h1>
+                <h2>I am a Interactive Media Design and Web Development student</h2>
+                <a href="#projects"><button>See my work</button></a>
+            </div>
+            
+            <div class="hero-arrow">
+                <p>Get to know me!</p>
+                <img src="./images/arrow1.svg" alt="arrow pointing to next section">
+                
+            </div>
+        </section>
+
+        <!--ABOUT ME-->
+        <section class="about" id="about">
+            <h1 class="heading">About me</h1>
+            
+            <div class="about-content">
+ 
+                <div class="left-content">
+                    <img alt="Profile image" src="./images/profile.png" class="circle">
+                </div>
+
+                <div class="right-content">
+                    <p>Hi, I’m Caitlyn Martinho - a developer and designer <b>based in Pretoria</b>. I’ve been working with code and design since I was 12, and I’m <b>currently studying Interactive Media Design</b>. I completed matric in 2023 at Hoërskool Warmbad and <b>studied UI Design in 2024</b>, where I developed a strong understanding of usability and visual design.</p>
+                    
+                    <p>I enjoy puzzles, design and art, and exploring video games. <b>My goal</b> is to become a UI/UX designer and front-end developer so I can use my skills to make users’ lives easier and create meaningful impact through my design ideas.</p>
+
+                    <a href="./assets/Caitlyn Martinho CV 2025.pdf"><button>Download my CV</button></a>
+                </div>
+            </div> 
+        </section>
+
+        <!--about section arrow-->
+        <div class="about-arrow">
+                <img src="./images/arrow2.svg" alt="arrow pointing to projects section">
+                <p>Check out what I've worked on!</p>
+                
         </div>
-      </footer>
 
-<!--JavaScript links-->
-<script src="./scripts/introAnimation.js"></script>    
-<script src="./scripts/TagCloud.min.js"></script>
-<script src="./scripts/navbar.js"></script>
-<script src="./scripts/projectPreview.js"></script>
+        <!--RECENT PROJECTS SECTION-->
+        <h1 class="heading" id="projects">Recent Projects</h1>
+        <section class="projects">
+            
+            <!--SUBTEXT and ARROWS-->
+            <p class="sub-text">*Click on read more to find out how I made these projects!</p>
 
-</body>
+            <img src="./images/Arrow 3.svg" alt="Arrow pointing to the first project" class="project-arrow1">
+            <img src="./images/Arrow 4.svg" alt="Arrow pointing to next project" class="project-arrow2">
+
+            <div class="project-container card-1">
+                <img src="./images/georges-bakery.png" alt="bakery website cover">
+                <div class="titles">
+                    <h2>Bakery Redesign</h2>
+                    <h3>LANDING PAGE</h3>
+                </div>   
+                <p>A modern one-page website concept for a local bakery, focused on elegant visuals and strong call-to-actions to drive customer engagement.</p>
+                <a href="./html/bakery-redesign.html">Read more</a>
+            </div>
+
+            <div class="project-container card-2">
+                <img src="./images/drakensberg-sun-resort.png" alt="drakensberg sun resort website cover">
+                <div class="titles">
+                    <h2>Drakensberg Sun Resort</h2>
+                    <h3>MULTI-PAGE WEBSITE</h3>
+                </div>   
+                <p>A responsive WordPress site reimagining the News2You homepage with improved layout, accessibility, and a clean educational aesthetic.</p>
+                <a href="./html/drakensberg.html">Read more</a>
+            </div>
+
+            <div class="project-container card-3">
+                <img src="./images/news2you.png" alt="news2you website cover">
+                <div class="titles">
+                    <h2>News2you</h2>
+                    <h3>WORDPRESS WEBSITE</h3>
+                </div>   
+                <p>A refreshed multi-page resort website design with improved usability and modernized visuals, inspired by the scenic beauty of the Drakensberg.</p>
+                <a href="./html/news2you.html">Read more</a>
+            </div>
+        </section>
+
+        <!--SKILLS SECTION-->
+        <h1 class="heading" id="skills">My skills</h1>
+        <section class="skills" >      
+
+            <div class="skills-top-arrow">
+                <img src="./images/arrow 5.svg" alt="Arrow pointing to skills">
+                <p>I'm always working on improving my skillset</p>
+            </div>
+
+            <div class="skills-container">
+                <h2 class="languages-heading">Languages</h2>
+                <ul>
+                    <li><img src="./images/icons/html.png" alt="HTML icon">HTML</li>
+                    <li><img src="./images/icons/css.png" alt="CSS icon">CSS</li>
+                    <li><img src="./images/icons/javascript.png" alt="JavaScript icon">JavaScript</li>
+                    <li><img src="./images/icons/python.png" alt="Python icon">Python</li>
+                    <li><img src="./images/icons/java.png" alt="Java icon">Java</li>
+                </ul>
+            </div>
+
+            <div class="skills-container">
+                <h2 class="software-heading">Software</h2>
+                <ul>
+                    <li><img src="./images/icons/photoshop.png" alt="Photoshop icon">Photoshop</li>
+                    <li><img src="./images/icons/illustrator.png" alt="Illustrator icon">Illustrator</li>
+                    <li><img src="./images/icons/figma.png" alt="Figma icon">Figma</li>
+                    <li><img src="./images/icons/github.png" alt="Github icon">Github</li>
+                    <li><img src="./images/icons/vscode.png" alt="VS Code icon">VS Code</li>
+                </ul>
+            </div>
+
+            
+        </section>
+
+        <!--Skills arrow-->
+        <div class="skills-bottom-arrow">
+            <img src="./images/arrow 6.svg" alt="Arrow leading to the experience page">
+            <p>See who I've worked with</p>
+        </div>
+        <!--EXPERIENCE-->
+        <h1 class="heading">Experience</h1>
+
+        <section class="experience" id="experience">
+            <div class="work-container">
+                <img src="./images/bitsavvy-logo.jpeg" alt="bitsavvy company logo">
+                <div class="left">
+                   <h1>Web developer intern</h1>
+                    <h2>Bitsavvy</h2> 
+                </div>
+                
+                <div class="right">
+                    <h3>Jan 2024 - Feb 2024</h3>
+                    <h3>Modimolle, Lim</h3>
+                </div>
+                
+                <p>WordPress - Fundamentals, Elementor, security & performance optimization (Honeypots, caching, and security plugins).</p>
+            </div>
+
+            <div class="work-container">
+                <img src="./images/together-logo.jpg" alt="together international logo">
+                <div class="left">
+                    <h1>Helpdesk</h1>
+                    <h2>Together International</h2> 
+                </div>
+                
+                <div class="right">
+                    <h3>Nov 2021 - Dec 2024</h3>
+                    <h3>Netherlands (Virtual)</h3>
+                </div>
+                
+                <p>Created & managed volunteer emails, assisted with email issues, and updated WordPress content for Together International.</p>
+            </div>
+            
+            
+
+        </section>
+
+        <footer>
+            <p>&#169 2025 Caitlyn Martinho</p>
+
+            <div class="right">
+                <a href="https://www.linkedin.com/in/caitlyn-martinho-24b613239/"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g id="lucide:linkedin">
+                    <g id="Group">
+                    <path id="Vector" d="M18.6666 9.3335C20.5232 9.3335 22.3036 10.071 23.6164 11.3837C24.9292 12.6965 25.6666 14.477 25.6666 16.3335V24.5002H21V16.3335C21 15.7147 20.7541 15.1212 20.3166 14.6836C19.879 14.246 19.2855 14.0002 18.6666 14.0002C18.0478 14.0002 17.4543 14.246 17.0167 14.6836C16.5791 15.1212 16.3333 15.7147 16.3333 16.3335V24.5002H11.6666V16.3335C11.6666 14.477 12.4041 12.6965 13.7169 11.3837C15.0297 10.071 16.8101 9.3335 18.6666 9.3335ZM2.33331 10.5002H6.99998V24.5002H2.33331V10.5002Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Vector_2" d="M4.66665 7.00016C5.95531 7.00016 6.99998 5.95549 6.99998 4.66683C6.99998 3.37816 5.95531 2.3335 4.66665 2.3335C3.37798 2.3335 2.33331 3.37816 2.33331 4.66683C2.33331 5.95549 3.37798 7.00016 4.66665 7.00016Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </g>
+                    </svg></a>
+                <a href="https://github.com/CaitlynMartinho"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M17.5 24.5C17.5 24.5 17.5 21.8517 17.5 21C17.5 20.265 17.675 18.7133 16.9167 18.0833C18.5383 17.9317 19.81 17.4067 21 16.3333C22.19 15.26 22.75 13.6383 22.75 11.0833C22.75 9.33333 22.4583 8.16667 21.5833 7C21.9217 6.09 21.98 4.66667 21.5833 3.5C19.7633 3.5 18.1183 4.74833 17.5 5.25C17.045 5.13333 15.9483 4.66667 14 4.66667C12.0517 4.66667 10.955 5.13333 10.5 5.25C9.88167 4.74833 8.23667 3.5 6.41667 3.5C6.02 4.66667 6.07833 6.09 6.41667 7C5.54167 8.16667 5.25 9.33333 5.25 11.0833C5.25 13.6383 5.81 15.26 7 16.3333C8.19 17.4067 9.46167 17.9317 11.0833 18.0833C10.325 18.7133 10.5 20.265 10.5 21C10.5 21.8517 10.5 24.5 10.5 24.5" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 22.1668C8.85967 22.1668 7.182 21.51 6.19733 20.7808C5.215 20.0528 4.92333 18.85 3.5 18.0835" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a>
+                <a href="mailto:caitlyn.martinho@outlook.com"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g id="material-symbols:mail-outline">
+                    <path id="Vector" d="M4.66665 23.3332C4.02498 23.3332 3.47587 23.1049 3.01931 22.6483C2.56276 22.1918 2.33409 21.6423 2.33331 20.9998V6.99984C2.33331 6.35817 2.56198 5.80906 3.01931 5.3525C3.47665 4.89595 4.02576 4.66728 4.66665 4.6665H23.3333C23.975 4.6665 24.5245 4.89517 24.9818 5.3525C25.4391 5.80984 25.6674 6.35895 25.6666 6.99984V20.9998C25.6666 21.6415 25.4384 22.191 24.9818 22.6483C24.5253 23.1057 23.9758 23.3339 23.3333 23.3332H4.66665ZM14 15.1665L4.66665 9.33317V20.9998H23.3333V9.33317L14 15.1665ZM14 12.8332L23.3333 6.99984H4.66665L14 12.8332ZM4.66665 9.33317V6.99984V20.9998V9.33317Z" fill="#333333"/>
+                    </g>
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <g id="Group">
+                    <path id="Vector" d="M18.8577 14.9288L20.7859 13.0007L15 7.21338L9.21411 12.9993L11.1437 14.9275L13.6364 12.4361V22.7138H16.3637V12.4361L18.8577 14.9288Z" fill="#40A2D8"/>
+                    <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M25.6064 4.39364C19.7482 -1.46455 10.2518 -1.46455 4.39364 4.39364C-1.46455 10.2518 -1.46455 19.7482 4.39364 25.6064C10.2518 31.4645 19.7482 31.4645 25.6064 25.6064C31.4645 19.7482 31.4645 10.2518 25.6064 4.39364ZM23.6782 6.32182C21.3766 4.02022 18.2549 2.7272 15 2.7272C11.7451 2.7272 8.62341 4.02022 6.32182 6.32182C4.02022 8.62341 2.7272 11.7451 2.7272 15C2.7272 18.2549 4.02022 21.3766 6.32182 23.6782C8.62341 25.9798 11.7451 27.2728 15 27.2728C18.2549 27.2728 21.3766 25.9798 23.6782 23.6782C25.9798 21.3766 27.2728 18.2549 27.2728 15C27.2728 11.7451 25.9798 8.62341 23.6782 6.32182Z" fill="#40A2D8"/>
+                    </g>
+                    </svg></a>
+            </div>
+            
+        </footer>
+
+        <script src="./scripts/animations.js"></script>
+        <script>
+            function toggleMenu() {
+              document.getElementById("nav-links").classList.toggle("active");
+            }
+          </script>
+    </body>
 </html>

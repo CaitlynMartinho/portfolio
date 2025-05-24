@@ -1,0 +1,123 @@
+.about{
+    position: relative;
+    
+}
+.about .left-content{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative;
+}
+
+.about .right-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.about button{
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.about button:hover{
+    background-color: #cf1855;
+    cursor: pointer;
+}
+
+.about .left-content .circle{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-width: 10px;
+    background-color: var(--purple);
+}
+
+.about-content{
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-arrow{
+    bottom: 10px;
+    margin: 50px auto 10px auto;
+    width: fit-content;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.about-arrow img{
+    height: 60px;
+    margin-right: 15px;
+}
+
+.about-arrow p{    
+    font-family: "Caveat", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--subText);
+    
+}
+
+/*Animation classes */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Moves elements down */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.circle-hidden {
+    opacity: 0;
+    transform: scale(0); /* Starts as small as possible */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out 0.6s; /* Slight delay */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0); /* Moves back up */
+}
+
+.circle-show {
+    opacity: 1;
+    transform: scale(1); /* Grows into place */
+}
+
+@media only screen and (max-width: 768px){
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about .left-content{
+        width: 100%;
+        height: 250px;
+    }
+
+    .about .right-content{
+        width: 100%;
+        
+        
+    }
+}

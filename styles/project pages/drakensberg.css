@@ -1,0 +1,87 @@
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction h1{
+    font-size: 60px;
+    font-family: "Fredoka";
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.introduction h2{
+    font-family: Fredoka;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.introduction p{
+    font-size: 20px;
+}
+
+.introduction button{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    font-size: 30px;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.introduction .link{
+    color: black;
+    font-size: 24px;
+}
+
+.introduction .links{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.content{
+    max-width: 65%;
+}
+
+.content p{
+    line-height: 150%;
+}
+
+.content-heading{
+    margin-top: 60px;
+}
+
+@media only screen and (max-width:768px){
+    .introduction{
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .introduction h1{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .introduction img{
+        width: 90%;
+    }
+
+    .introduction button{
+        font-size: 20px;
+        padding: 3px 6px;
+    }
+
+    .introduction .link{
+        font-size: 20px;
+    }
+
+    .content{
+        max-width: 100%;
+        padding: 10px;
+    }
+}
